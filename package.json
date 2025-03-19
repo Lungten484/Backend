@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node app.js", 
+=======
+    "start": "node app.js",
+>>>>>>> 0ce9953 (Practical 2)
     "dev": "nodemon app.js"
   },
   "repository": {
@@ -19,9 +23,18 @@
   },
   "homepage": "https://github.com/Lungten484/Backend#readme",
   "dependencies": {
+<<<<<<< HEAD
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2"
+=======
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "pg-promise": "^11.12.1"
+>>>>>>> 0ce9953 (Practical 2)
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
