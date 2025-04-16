@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const { isAuthenticated } = require('../config/authMiddleware');
 
-
 // Home route (only accessible by logged-in users)
 router.get('/home', isAuthenticated, (req, res) => {
     // Prevent caching of the home page by setting appropriate headers
@@ -12,7 +11,6 @@ router.get('/home', isAuthenticated, (req, res) => {
     res.render('home', { user: req.session.user });
 });
 
-
 // Logout route
 router.get('/logout', (req, res) => {
     req.session.destroy(() => {
@@ -21,4 +19,4 @@ router.get('/logout', (req, res) => {
 });
 
 
-module.exports = router;
+module.exports = router;
